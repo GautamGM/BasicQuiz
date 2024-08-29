@@ -75,5 +75,13 @@ submit.addEventListener("click",()=>{
     <button class="playAgain" onclick="location.reload()">Play again</button>
     </div>`;
    questionSection.style.display="none"
+   const task=document.querySelector("h1")
+   task.innerHTML="Quiz Completed &#127882"
+  }
+  if(currentQuiz==quizData.length-1){
+    submit.innerHTML="Submit"
+  }
+  else{
+    submit.innerHTML="Next"
   }
 })
