@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      border: 1px solid black;
+      background: #200122; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #6f0000,
+        #200122
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #6f0000,
+        #200122
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .quiz-container {
+      width: 350px;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 7px 7px 7px rgb(0, 0, 0);
+    }
+    h4 {
+      font-size: 22px;
+      color: #2e1130;
+      font-weight: bold;
+    }
+    li {
+      list-style: none;
+    }
+    label {
+      font-size: 20px;
+    }
+    h1 {
+      color: white;
+      font-weight: 700;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 5px;
+      background: #780206; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #061161,
+        #780206
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #061161,
+        #780206
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    #submit{
+       width: 100px;
+       height: 30px;
+       border-radius: 5px;
+       transform: none;
+       background-color: #780206;
+       color: white;
+       border: 1px solid white;
+       cursor: pointer;
+       box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    }
+    #submit:hover{
+        background-color: #061161;
+        width: 102px;
+       height: 32px;
+       font-weight: 700;
+
+    }
+    .result{
+        height: 250px;
+    }
+    p{
+        font-size:22px;
+        font-weight: 600;
+    }
+    .playAgain{
+        width: 100px;
+       height: 30px;
+       border-radius: 5px;
+       transform: none;
+       background-color: #002364;
+       color: white;
+       border: 1px solid white;
+       cursor: pointer;
+       box-shadow: 2px 2px 2px rgb(0, 0, 0);
+       font-weight: 400;
+       font-size: 16px;
+    }
+    .playAgain:hover{
+        background-color: #780206;
+        width: 102px;
+       height: 32px;
+       font-weight: 700;
+
+    }
+    .myscore{
+        width:50px;
+        height: 50px;
+        background-color: aliceblue;
+        box-shadow: 7px 7px 7px rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Lest's Play Quiz</h1>
+      <div class="quiz-container">
+        <div id="quiz">
+          <h4 class="quizqustion" id="quizquestion">Quiz question</h4>
+        </div>
+        <div class="question_section">
+          <hr />
+          <ul>
+            <li>
+              <input
+                type="radio"
+                name="options"
+                id="answers"
+                class="answers"
+                id="a"
+              />
+              <label for="a" id="option_1">options</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="options"
+                id="answers"
+                class="answers"
+                id="b"
+              />
+              <label for="a" id="option_2">options</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="options"
+                id="answers"
+                class="answers"
+                id="c"
+              />
+              <label for="a" id="option_3">options</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="options"
+                id="answers"
+                class="answers"
+                id="d"
+              />
+              <label for="a" id="option_4">options</label>
+            </li>
+          </ul>
+          <hr />
+          <div class="btn">
+            <button type="submit" id="submit">submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./quiz.js"></script>
+</html>
